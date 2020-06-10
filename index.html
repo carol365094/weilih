@@ -14,6 +14,18 @@ Licence URI: https://www.os-templates.com/template-terms
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<!-- Place somewhere in the <head> of your document -->
+<link rel="stylesheet" href="layout/styles/flexslider.css" type="text/css">
+ <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script src="jquery.min.js"></script>
+<script src="jquery.flexslider-min.js"></script>
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
@@ -24,18 +36,18 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <div id="logo" class="one_quarter first">
       <h1><img style="float: left;" src="images/demo/logo2.png"" alt="logo"><br/>
-      <a href="index.html"><span>W</span>ei<span>L</span>ih&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h1>
+      <p><span>W</span>ei<span>L</span>ih&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></h1>
     </div>
     <div class="three_quarter">
       <ul class="nospace clear"><br/><br/>
         <li class="one_third first">
-          <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Give us a call:</strong> +886 (02) 4566 7890</span></div>
+          <div class="block clear"><a href="index.html#"><i class="fas fa-phone"></i></a> <span><strong>Give us a call:</strong> +886 (02) 4566 7890</span></div>
         </li>
         <li class="one_third">
-          <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Send us a mail:</strong> WeiLih@shu.edu.com.tw</span></div>
+          <div class="block clear"><a href="index.html#"><i class="fas fa-envelope"></i></a> <span><strong>Send us a mail:</strong> WeiLih@mail.shu.edu.com.tw</span></div>
         </li>
         <li class="one_third">
-          <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong> Thu.</strong> 13:00am - 16:00pm</span></div>
+          <div class="block clear"><a href="index.html#"><i class="fas fa-clock"></i></a> <span><strong> Thu.</strong> 13:00pm - 16:00pm</span></div>
         </li>
       </ul>
     </div>
@@ -50,35 +62,23 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <nav id="mainav">
       <ul class="clear">
-        <li class="active"><a href="index.html">首頁</a></li>
-        <li><a class="drop" href="#">企業資訊</a>
-          <ul>
-            <li><a href="#">Level 2</a></li>
-            <li><a class="drop" href="#">Level 2 + Drop</a>
-              <ul>
-                <li><a href="#">Level 3</a></li>
-                <li><a href="#">Level 3</a></li>
-                <li><a href="#">Level 3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Level 2</a></li>
-          </ul>
-        </li>
+        <li class="active"><a href="index.html#">首頁</a></li>
+        <li><a href="index.html#">企業資訊</a>
         <li><a class="drop" href="#">產品介紹</a>
           <ul>
-          	<li><a href="pages/gallery.html">鬼麵</a></li>
-            <li><a href="pages/gallery.html">炸醬麵</a></li>
-            <li><a href="pages/full-width.html">鴛鴦麵</a></li>
-            <li><a href="pages/sidebar-left.html">海豚麵</a></li>
-            <li><a href="pages/sidebar-right.html">田園蔬菜麵</a></li>
-            <li><a href="pages/basic-grid.html">大白鯊魚麵</a></li>
-            <li><a href="pages/font-icons.html">海神三叉麵</a></li>
+          	<li><a href="index.html#">鬼麵</a></li>
+            <li><a href="index.html#">炸醬麵</a></li>
+            <li><a href="index.html#">鴛鴦麵</a></li>
+            <li><a href="index.html#">海豚麵</a></li>
+            <li><a href="index.html#">田園蔬菜麵</a></li>
+            <li><a href="index.html#">大白鯊魚麵</a></li>
+            <li><a href="index.html#">海神三叉麵</a></li>
           </ul>
         </li>
-        <li><a href="#">最新消息</a></li>
-        <li><a href="#">消費者服務</a></li>
-        <li><a href="#">影片欣賞</a></li>
-        <li><a href="#">聯絡我們</a></li>
+        <li><a href="pages/gallery.html">影片欣賞</a></li>
+        <li><a href="index.html#">最新消息</a></li>
+        <li><a href="index.html#">消費者服務</a></li>
+        <li><a href="index.html#">聯絡我們</a></li>
       </ul>
     </nav>
     <!-- ################################################################################################ -->
@@ -99,7 +99,10 @@ Licence URI: https://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/top7.jpg');">
+    <!-- ################################################################################################ -->
+    <div class="flexslider">
+      <ul class="slides">
+        <li><div class="wrapper bgded overlay"style="background-image:url('images/demo/backgrounds/top7.jpg');">
   <div id="pageintro" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <article>
@@ -110,6 +113,13 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
   </div>
 </div>
+<li><a href="#"><img src="images/demo/backgrounds/top2.jpg" alt=""></a></li>
+        <li><a href="#"><img src="images/demo/backgrounds/top3.jpg" alt=""></a></li>
+</li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -121,17 +131,17 @@ Licence URI: https://www.os-templates.com/template-terms
       <h6 class="heading">企業識別系統</h6>
     </div>
     <div class="group center btmspace-80">
-      <article class="one_third first"><a class="imgover" href="#"><img src="images/demo/cis01.png" alt="noodle"></a>
+      <article class="one_third first"><img src="images/demo/cis01.png" alt="noodle">
         <h6 class="heading">麵<p style="text-align: center;"><strong><span style="font-family: 微軟正黑體; color:#b22222; font-size: 24px;">⬇</span></strong></p></h6>
       </article>
-      <article class="one_third"><a class="imgover" href="#"><img src="images/demo/cis02.png" alt=""></a>
+      <article class="one_third"><img src="images/demo/cis02.png" alt="">
         <h6 class="heading">暖色<p style="text-align: center;"><strong><span style="font-family: 微軟正黑體; color:#b22222; font-size: 24px;">⬇</span></strong></p></h6>
       </article>
-      <article class="one_third"><a class="imgover" href="#"><img src="images/demo/cis03.png" alt=""></a>
+      <article class="one_third"><img src="images/demo/cis03.png" alt="">
         <h6 class="heading">文字<p style="text-align: center;"><strong><span style="font-family: 微軟正黑體; color:#b22222; font-size: 24px;">⬇</span></strong></p></h6>
       </article>
     </div>
-    <p class="center"><a class="imgover" href="#"><img src="images/demo/logo1.png" alt=""></a></p>
+    <p class="center"><img src="images/demo/logo1.png" alt=""></p>
     <!-- ################################################################################################ -->
     <!-- / main body -->
     <div class="clear"></div>
@@ -144,13 +154,12 @@ Licence URI: https://www.os-templates.com/template-terms
   <section class="hoc container clear"> 
     <!-- ################################################################################################ -->
     <article class="one_third first">
-      <h6 class="heading">Vel nunc nulla nunc metus tempor vitae eu diam</h6>
-      <p>Sed placerat leo nec tincidunt aliquet ipsum mi ultrices magna eu tempor quam dolor eu sem nullam risus turpis rhoncus vel varius consequat laoreet ac neque pellentesque imperdiet sagittis velit vivamus urna ut dictum erat eu massa aliquam nunc urna ornare.</p>
-      <p class="btmspace-30">Tincidunt quis posuere id justo aenean velit ipsum tincidunt aliquet lacinia nec pharetra in purus proin auctor justo ac sem.</p>
-      <p><a class="btn" href="#">Donec rutrum justo at <i class="fas fa-angle-right"></i></a></p>
+      <h6 class="heading">維力食品公司</h6>
+      <p>維力食品公司堅持立足台灣並在地深根，建立企業內部和諧、全體同仁上下齊心，以保障員工就業機會，讓員工和公司共同成長，朝向員工生活安定、公司獲利成長之利益共享的目標努力。</p>
+      <p class="btmspace-30">展望未來，維力食品公司將朝國際化經營的腳步邁進，以國內成功的經驗作為進軍國際的基礎， 使維力優良的產品拓展到世界各地，永續經營創造更優質生活美食，並成為世界級食品大廠， 讓更多人享受健康美好的優質生活。</p>
     </article>
-    <figure class="one_third"><a class="imgover" href="#"><img src="images/demo/middle1-1.jpg" alt=""></a></figure>
-    <figure class="one_third"><a class="imgover" href="#"><img src="images/demo/middle1-2.jpg" alt=""></a></figure>
+    <figure class="one_third"><a href="#"><img src="images/demo/middle1-1.jpg" alt=""></a></figure>
+    <figure class="one_third"><a href="#"><img src="images/demo/middle1-2.jpg" alt=""></a></figure>
     <!-- ################################################################################################ -->
   </section>
 </div>
@@ -161,54 +170,54 @@ Licence URI: https://www.os-templates.com/template-terms
   <section class="hoc container clear"> 
     <!-- ################################################################################################ -->
     <div class="sectiontitle">
-      <h6 class="heading">Libero morbi tincidunt nulla sit</h6>
-      <p>Amet ipsum praesent at velit aliquam ullamcorper sem a auctor</p>
+      <h6 class="heading">LOGO設計</h6>
     </div>
-    <ul class="nospace group btmspace-80 overview">
-      <li class="one_third">
-        <article><a href="#"><i class="fas fa-smile"></i></a>
-          <h6 class="heading"><a href="#">Dapibus nisi nunc vehicula</a></h6>
-          <p>Nunc quis mattis pede turpis at elit phasellus sed sem pellentesque nunc&hellip;</p>
-          <footer><a href="#">View Details <i class="fas fa-angle-right"></i></a></footer>
-        </article>
-      </li>
-      <li class="one_third">
-        <article><a href="#"><i class="fas fa-trash"></i></a>
-          <h6 class="heading"><a href="#">Dignissim consequat proin</a></h6>
-          <p>Nec odio nam in lacus ac purus dapibus pretium sed ornare eleifend tellus&hellip;</p>
-          <footer><a href="#">View Details <i class="fas fa-angle-right"></i></a></footer>
-        </article>
-      </li>
-      <li class="one_third">
-        <article><a href="#"><i class="fas fa-life-ring"></i></a>
-          <h6 class="heading"><a href="#">Aliquam mollis neque ut</a></h6>
-          <p>Ullamcorper tempor dolor tortor varius nisi id euismod risus neque curabitur&hellip;</p>
-          <footer><a href="#">View Details <i class="fas fa-angle-right"></i></a></footer>
-        </article>
-      </li>
-      <li class="one_third">
-        <article><a href="#"><i class=" fas fa-low-vision"></i></a>
-          <h6 class="heading"><a href="#">Sodales dui sit amet mi</a></h6>
-          <p>Donec cursus sapien neque gravida nulla cursus lorem ut tempor massa &hellip;</p>
-          <footer><a href="#">View Details <i class="fas fa-angle-right"></i></a></footer>
-        </article>
-      </li>
-      <li class="one_third">
-        <article><a href="#"><i class="fas fa-bug"></i></a>
-          <h6 class="heading"><a href="#">Porta libero at scelerisque</a></h6>
-          <p>Lorem ipsum et arcu mauris consequat semper vivamus lobortis consequat&hellip;</p>
-          <footer><a href="#">View Details <i class="fas fa-angle-right"></i></a></footer>
-        </article>
-      </li>
-      <li class="one_third">
-        <article><a href="#"><i class="fas fa-bicycle"></i></a>
-          <h6 class="heading"><a href="#">Purus fusce consectetuer</a></h6>
-          <p>Nisl in massa phasellus feugiat arcu sed lacinia egestas augue lorem posuere&hellip;</p>
-          <footer><a href="#">View Details</a> <i class="fas fa-angle-right"></i></footer>
-        </article>
-      </li>
-    </ul>
-    <footer class="center"><a class="btn" href="#">Vestibulum suspendisse <i class="fas fa-angle-right"></i></a></footer>
+    <div class="group center btmspace-80">
+      <article class="one_third first"><img src="images/demo/logo/logo1.jpg" alt="noodle">
+        <h6 class="heading"><p style="text-align: center;"><strong><span style="font-size: 24px;">圓食之力</span></strong></p></h6>
+        <p style="text-align: left;">設計師：李佳軒</br>
+理念：</br>
+運用簡單的圓形作為整個Logo的主體，也代表著維力企業的圓滿、感恩的精神&hellip;</p>
+          <footer><a href="#"><p style="text-align: left; color:#444444;">Read More<i class="fas fa-angle-right"></i></p></a></footer>
+      </article>
+      <article class="one_third"><img src="images/demo/logo/logo2.jpg" alt="">
+        <h6 class="heading"><p style="text-align: center;"><strong><span style="font-size: 24px;">山間斗日</span></strong></p></h6>
+        <p style="text-align: left;">設計師：張書瑜</br>
+理念：</br>
+色彩用原本的紅色加上稻穗的大地色系，讓視覺顏色不會過於強烈&hellip;</p>
+          <footer><a href="#"><p style="text-align: left; color:#444444;">Read More<i class="fas fa-angle-right"></i></p></a></footer>
+      </article>
+      <article class="one_third"><img src="images/demo/logo/logo3.jpg" alt="">
+        <h6 class="heading"><p style="text-align: center;"><strong><span style="font-size: 24px;">加斗麵</span></strong></p></h6>
+        <p style="text-align: left;">設計師：陳佳妤</br>
+理念：</br>
+波浪彎曲的線條與俏皮可愛的字，讓泡麵不只是方便的選擇，更是現代社會裡平易近人的美食&hellip;</p>
+          <footer><a href="#"><p style="text-align: left; color:#444444;">Read More<i class="fas fa-angle-right"></i></p></a></footer>
+      </article>
+      <article class="one_third first"><img src="images/demo/logo/logo4.jpg" alt="noodle">
+        <h6 class="heading"><p style="text-align: center;"><strong><span style="font-size: 24px;">盛現</span></strong></p></h6>
+        <p style="text-align: left;">設計師：孫昱涵</br>
+理念：</br>碗-泡麵碗是維力的代表，紅色的碗加上滿滿的麵，除了吸睛之外，也有振奮食慾的效果&hellip;</p>
+          <footer><a href="#"><p style="text-align: left; color:#444444;">Read More<i class="fas fa-angle-right"></i></p></a></footer>
+      </article>
+      <article class="one_third"><img src="images/demo/logo/logo2.jpg" alt="">
+        <h6 class="heading"><p style="text-align: center;"><strong><span style="font-size: 24px;">日出印象</span></strong></p></h6>
+        <p style="text-align: left;">設計師：陳立安</br>
+理念：</br>
+整體以圓形呈現，有著豐衣足食飽滿之意。</br>
+日出-代表生生不息，隨著時代變遷、物換星移&hellip;</p>
+          <footer><a href="#"><p style="text-align: left; color:#444444;">Read More<i class="fas fa-angle-right"></i></p></a></footer>
+      </article>
+      <article class="one_third"><img src="images/demo/logo/logo2.jpg" alt="">
+        <h6 class="heading"><p style="text-align: center;"><strong><span style="font-size: 24px;">豐穗</span></strong></p></h6>
+        <p style="text-align: left;">設計師：徐琬瑜</br>
+理念：</br>
+稻穗和麵條圍繞-給人圓滿、快樂的感覺。</br>
+碗-維力把快樂、健康全都放在碗裡，供客人享受&hellip;</p>
+          <footer><a href="#"><p style="text-align: left; color:#444444;">Read More<i class="fas fa-angle-right"></i></p></a></footer>
+      </article>
+    </div>
+    <footer class="center"><a class="btn" href="#">More<i class="fas fa-angle-right"></i></a></footer>
     <!-- ################################################################################################ -->
   </section>
 </div>
@@ -220,32 +229,28 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <div class="sectiontitle">
       <h6 class="heading">廣告宣傳</h6>
-      <p>Dolor in fermentum ipsum vel mi mattis venenatis vivamus</p>
     </div>
     <div id="latest" class="group">
-      <article class="one_third first"><a class="imgover" href="#"><img src="images/demo/middle2-1.jpg" alt=""></a>
+      <article class="one_third first"><a href="#"><img src="images/demo/middle2-1.jpg" alt=""></a>
         <div class="excerpt">
           <h6 class="heading">直接信函</h6>
-          <p>Pede nam quis mauris nunc volutpat elementum sapien in hendrerit justo non nisl sed dictum libero et nisi.</p>
-          <footer><a href="#">Read More <i class="fas fa-angle-right"></i></a></footer>
+          <p>採用類似立體書的趣味設計，當打開後可以實際看見泡麵的模擬圖，讓消費者可以拉近跟維力品牌的距離，以此行銷手法宣傳品牌。</p>
         </div>
       </article>
-      <article class="one_third"><a class="imgover" href="#"><img src="images/demo/middle2-2.jpg" alt=""></a>
+      <article class="one_third"><a href="#"><img src="images/demo/middle2-2.jpg" alt=""></a>
         <div class="excerpt">
           <h6 class="heading">車體廣告</h6>
-          <p>Orci nulla purus pellentesque risus magna vulputate vitae sodales in aliquam at tortor praesent tincidunt.</p>
-          <footer><a href="#">Read More <i class="fas fa-angle-right"></i></a></footer>
+          <p>將品牌的主打商品-維力海豚麵放到車體上，運用車窗上下開關製造出吃泡麵時的景象，麵條也會沿著窗戶做移動，增加與消費者之間的互動。</p>
         </div>
       </article>
-      <article class="one_third"><a class="imgover" href="#"><img src="images/demo/middle2-3.jpg" alt=""></a>
+      <article class="one_third"><a href="#"><img src="images/demo/middle2-3.jpg" alt=""></a>
         <div class="excerpt">
           <h6 class="heading">大型看板廣告</h6>
-          <p>Donec faucibus lorem ut neque pellentesque quam donec imperdiet nisl sed euismod ullamcorper tortor cras.</p>
-          <footer><a href="#">Read More <i class="fas fa-angle-right"></i></a></footer>
+          <p>利用海神波賽頓的人格特質表現維力泡麵， 吃完可以力大無比、充滿能量，讓經過的人們看完可以留下深刻的印象。</p>
         </div>
       </article>
     </div>
-    <footer class="center"><a class="btn" href="#">Pharetra pulvinar risus <i class="fas fa-angle-right"></i></a></footer>
+    <footer class="center"><a class="btn" href="#">More<i class="fas fa-angle-right"></i></a></footer>
     <!-- ################################################################################################ -->
   </section>
 </div>
@@ -256,40 +261,24 @@ Licence URI: https://www.os-templates.com/template-terms
   <footer id="footer" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <div class="one_third first">
-      <h6 class="heading">Nulla facilisi praesent</h6>
-      <p>Diam libero interdum at fringilla id interdum eu ante phasellus nec mauris non risus fermentum condimentum in.</p>
-      <p class="btmspace-30">Vulputate ante ut adipiscing egestas risus orci tincidunt nulla ac lacinia lacus felis et augue donec lacus [<a href="#"><i class="fas fa-arrow-right"></i></a>]</p>
-      <ul class="faico clear">
-        <li><a class="faicon-dribble" href="#"><i class="fab fa-dribbble"></i></a></li>
-        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
-        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
-        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
-        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
-      </ul>
+      <h6 class="heading">維力食品集團</h6>
+      <p>「維心造美食，力創新生活」，提供最好的、最健康的食品給消費者，開發獨特醬料並研發多樣化產品外銷市場，秉持著感恩的精神繼續回饋給社會大眾。</p>
     </div>
     <div class="one_third">
-      <h6 class="heading">Aenean lobortis quam at</h6>
+      <h6 class="heading">團隊開發人員</h6>
       <ul class="nospace clear latestimg">
-        <li><a href="#"><img src="images/demo/member01.jpg" alt=""></a></li>
-        <li><a href="#"><img src="images/demo/member02.jpg" alt=""></a></li>
-        <li><a href="#"><img src="images/demo/member03.jpg" alt=""></a></li>
-        <li><a href="#"><img src="images/demo/member04.jpg" alt=""></a></li>
-        <li><a href="#"><img src="images/demo/member05.jpg" alt=""></a></li>
-        <li><a href="#"><img src="images/demo/member06.jpg" alt=""></a></li>
+        <li><img src="images/demo/member01.jpg" alt="009"></li>
+        <li><img src="images/demo/member02.jpg" alt="037"></li>
+        <li><img src="images/demo/member03.jpg" alt="047"></li>
+        <li><img src="images/demo/member04.jpg" alt="059"></li>
+        <li><img src="images/demo/member05.jpg" alt="083"></li>
+        <li><img src="images/demo/member06.jpg" alt="271"></li>
       </ul>
     </div>
     <div class="one_third">
-      <h6 class="heading">Enim fusce venenatis laoreet</h6>
-      <p class="nospace btmspace-15">Elit sed est tortor molestie in consectetuer fringilla suscipit ut odio in.</p>
-      <form method="post" action="#">
-        <fieldset>
-          <legend>Newsletter:</legend>
-          <input class="btmspace-15" type="text" value="" placeholder="Name">
-          <input class="btmspace-15" type="text" value="" placeholder="Email">
-          <button type="submit" value="submit">Submit</button>
-        </fieldset>
-      </form>
+      <h6 class="heading">聯絡資訊</h6>
+      <p class="nospace btmspace-15">上班時間</br>
+Thu. 13:00pm-16:00pm</p>
     </div>
     <!-- ################################################################################################ -->
   </footer>
